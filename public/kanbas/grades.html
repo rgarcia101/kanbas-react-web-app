@@ -1,120 +1,234 @@
-<table border="0" width="100%">
-    <tbody>
-        <tr VALIGN=TOP>
-            <td style="width:10%">
-                <ul>
-                    <li><a href="/kanbas/profile/index.html">Account</a></li>
-                    <li><a href="#">Dashboard</a></li>
-                    <li><a href="/kanbas/home.html">Courses</a></li>
-                    <li><a href="#">Calendar</a></li>
-                    <li><a href="#">Inbox</a></li>
-                    <li><a href="#">History</a></li>
-                    <li><a href="#">Studio</a></li>
-                    <li><a href="#">Commons</a></li>
-                    <li><a href="#">Help</a></li>
-                 </ul>
-            </td>
-            <td style="width:15%">
-                <ul>
-                    <li><a href="/kanbas/home.html">Home</a></li>
-                    <li><a href="#">Modules</a></li>
-                    <li><a href="#">Piazza</a></li>
-                    <li><a href="#">Zoom Meetings</a></li>
-                    <li><a href="/kanbas/assignments/index.html">Assignments</a></li>
-                    <li><a href="#">Quizzes</a></li>
-                    <li><a href="/kanbas/grades.html">Grades</a></li>
-                    <li><a href="#">People</a></li>
-                    <li><a href="#">Panopto Video</a></li>
-                    <li><a href="#">Discussions</a></li>
-                    <li><a href="#">Announcements</a></li>
-                    <li><a href="#">Pages</a></li>
-                    <li><a href="#">Files</a></li>
-                    <li><a href="#">Rubrics</a></li>
-                    <li><a href="#">Outcomes</a></li>
-                    <li><a href="#">Collaborations</a></li>
-                    <li><a href="#">Syllabus</a></li>
-                    <li><a href="/kanbas/settings/index.html">Settings</a></li>
-                 </ul>
-            </td>
-            <td>
-                <select>
-                    <option value="VAL1" selected>Gradebook</option>
-                    <option value="VAL2">
-                        Value 2</option>
-                    <option value="VAL3">Value 3</option>
-                 </select>
-                <button type="button">Import</button>
-                <select>
-                    <option value="VAL1" selected>Export</option>
-                    <option value="VAL2">
-                        Value 2</option>
-                    <option value="VAL3">Value 3</option>
-                 </select>
-                <button type="button">Configure</button><br/>
-                <h2>Student Names</h2>
-                <form id="text-fields-student">
-                    <input id="text-fields-student-name" placeholder="Search Students"/><br/>
-                </form> 
-                <h2>Assignment Names</h2>
-                <form id="text-fields-assignment">
-                    <input id="text-fields-assignment-name" placeholder="Search Assignments"/><br/>
-                </form> 
-                <button type="button">Apply Filters</button><br/><br/>
+<html>
+    <head>
+         <!--<link href="../../vendors/fontawesome/css/all.css" rel="stylesheet"/>-->
+         <link href="../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+         <script src="https://kit.fontawesome.com/79c0dc1f30.js" crossorigin="anonymous"></script>
+
+
+        <script
+         src="https://code.jquery.com/jquery-3.7.1.min.js"
+         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+         crossorigin="anonymous"></script>
+       <script
+         src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"
+         integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g=="
+         crossorigin="anonymous"
+         referrerpolicy="no-referrer"></script>
+       <script src="../vendors/bootstrap/js/bootstrap.min.js"></script>
+       <link href="index.css"
+         rel="stylesheet"/>
+
+
+       
+         
+    </head>
+    <body>
+
+        <div class="wd-flex-row-container">
+            <div class="d-none d-md-block">
+                <div class="container" id="id-principle-nav">
+                    <div class="list-group nav-bar-position" id="id-priciple-nav-group">
+                        <a href="/kanbas/profile/index.html" class="list-group-item list-group-item-action nav-padding-all-around"><i id ="id-account-image" class="fa-solid fa-user fa-2x nav-margin-bottom fa-border style-border-radius-white"></i><br/>Account</a>
+                        <a href="/kanbas/dashboard/index.html" class="list-group-item list-group-item-action nav-padding-all-around"><i class="fa-solid fa-gauge-high fa-2x nav-margin-bottom"></i><br/>Dashboard</a>
+                        <a href="/kanbas/home.html" class="list-group-item list-group-item-action nav-padding-all-around principle-selection"><i class="fa-solid fa-book fa-2x nav-margin-bottom"></i><br/>Courses</a>
+                        <a href="#" class="list-group-item list-group-item-action nav-padding-all-around"><i class="fa-regular fa-calendar-days fa-2x nav-margin-bottom"></i><br/>Calendar</a>
+                        <a href="#" class="list-group-item list-group-item-action nav-padding-all-around"><i class="fa-solid fa-inbox fa-2x nav-margin-bottom"></i><br/>Inbox</a>
+                        <a href="#" class="list-group-item list-group-item-action nav-padding-all-around"><i class="fa-regular fa-clock fa-2x nav-margin-bottom"></i><br/>History</a>
+                        <a href="#" class="list-group-item list-group-item-action nav-padding-all-around"><i class="fa-solid fa-photo-film fa-2x nav-margin-bottom"></i><br/>Studio</a>
+                        <a href="#" class="list-group-item list-group-item-action nav-padding-all-around"><i class="fa-solid fa-arrow-up-from-bracket fa-rotate-90 fa-2x nav-margin-bottom"></i><br/>Commons</a>
+                        <a href="#" class="list-group-item list-group-item-action nav-padding-all-around"><i class="fa-regular fa-circle-question fa-2x nav-margin-bottom"></i><br/>Help</a>
+                    </div>
+                </div>
+            </div>
+            <div class="d-none d-md-block button-margin">
+                <div class="container no-padding" id="id-account-nav">
+                    <div class="list-group account-nav-position">
+                        <div class="list-group account-nav-width account-nav-position text-padding" >
+                            <a href="/kanbas/home.html" class="list-group-item list-group-item-action">
+                                Home</a>
+                            <a href="#" class="list-group-item list-group-item-action">Modules</a>
+                            <a href="#" class="list-group-item list-group-item-action">Piazza</a>
+                            <a href="#" class="list-group-item list-group-item-action">Zoom Meetings</a>
+                            <a href="/kanbas/assignments/index.html" class="list-group-item list-group-item-action">Assignments</a>
+                            <a href="#" class="list-group-item list-group-item-action">Quizzes</a>
+                            <a href="/kanbas/grades.html" class="list-group-item list-group-item-action current-page">Grades</a>
+                            <a href="#" class="list-group-item list-group-item-action">People</a>
+                            <a href="#" class="list-group-item list-group-item-action">Panopto Video</a>
+                            <a href="#" class="list-group-item list-group-item-action">Discussions</a>
+                            <a href="#" class="list-group-item list-group-item-action">Announcements</a>
+                            <a href="#" class="list-group-item list-group-item-action">Pages</a>
+                            <a href="#" class="list-group-item list-group-item-action">Files</a>
+                            <a href="#" class="list-group-item list-group-item-action">Rubrics</a>
+                            <a href="#" class="list-group-item list-group-item-action">Outcomes</a>
+                            <a href="#" class="list-group-item list-group-item-action">Collaborations</a>
+                            <a href="#" class="list-group-item list-group-item-action">Syllabus</a>
+                            <a href="/kanbas/settings/index.html" class="list-group-item list-group-item-action">Settings</a>
+                        </div>
+                    </div>
+             </div>
+            </div>
+            <div class="wd-flex-grow-1 page-margin-left">
+                <nav class="icon-padding-top custom-breadcrumb" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <i class="fa-solid fa-bars breadcrumb-icon-size button-margin-larger"></i>
+                      <li class="breadcrumb-item active"><a class="link-style" href="#">CS5610.17367.202410</a></li>  
+                      <li class="breadcrumb-item active" aria-current="page">Grades</li>
+                    </ol>
+                </nav>
+                <hr class="page-margin">
+                <button type="button" class="btn btn-secondary button-margin float-end page-margin"><i class="fa-solid fa-gear black-icon icon-padding-top-bottom"></i></button>
                 
-                <table border="1" width="100%">
-                    <thead>
-                        <tr>
-                            <th>Student Name</th>
-                            <th>A1 SETUP<br/>Out of 100</th>
-                            <th>A2 HTML<br/>Out of 100</th>
-                            <th>A3 CSS<br/>Out of 100</th>
-                            <th>A4 BOOTSTRAP<br/>Out of 100</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Alice Wonderland</td>
-                            <td style="text-align: center">
-                                <form style="display:inline" id="text-fields-grade">
-                                <input type="number" max="100" min="0"id="text-fields-grade-a1" placeholder="100" style="text-align: center"/>
-                                </form>
-                            </td>
-                            <td style="text-align: center">98</td>
-                            <td style="text-align: center">85</td>
-                            <td style="text-align: center">100</td>
-                        </tr>
-                        <tr>
-                            <td>Princess Leia</td>
-                            <td style="text-align: center">10</td>
-                            <td style="text-align: center">
-                                <form style="display:inline" id="text-fields-grade">
-                                    <input type="number" max="100" min="0" id="text-fields-grade-a2" placeholder="98" style="text-align: center"/>
-                                </form>
-                            </td>
-                            <td style="text-align: center">95</td>
-                            <td style="text-align: center">75</td>
-                        </tr>
-                        <tr>
-                            <td>Luke Skywalker</td>
-                            <td style="text-align: center">95</td>
-                            <td style="text-align: center">100</td>
-                            <td style="text-align: center">85</td>
-                            <td style="text-align: center">85</td>
-                        </tr>
-                        <tr>
-                            <td>Han Solo</td>
-                            <td style="text-align: center">98</td>
-                            <td style="text-align: center">100</td>
-                            <td style="text-align: center">66</td>
-                            <td style="text-align: center">
-                                <form style="display:inline" id="text-fields-grade">
-                                    <input type="number" max="100" min="0" id="text-fields-grade-a4" placeholder="88" style="text-align: center"/>
-                                </form>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </td>
-        </tr>
-    </tbody>
-</table>
+                <div class="dropdown float-end button-margin">
+                    <button class="btn btn-secondary dropdown-toggle black-icon" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-file-export icon-padding black-icon"></i><span class="black-icon">Export</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </div>
+                <button type="button" class="btn btn-secondary button-margin float-end"><i class="fa-solid fa-file-import black-icon icon-padding-right"></i><span class="black-icon">Import</span></button><br/><br/>
+                
+                <div class="container page-margin no-padding">
+                    <div class="row text-padding-top">
+                        <div class="col-md-6">
+                            <label for="studentNamesInput" class="form-label bold-text">Student Names</label>
+                        </div>
+                        <div class="col-md-6 no-padding-left">
+                            <label for="assignmentNamesInput" class="form-label bold-text">Assignment Names</label>
+                        </div>
+                    </div>
+                    <div class="row page-margin">
+                        <div class="col">
+                            <select class="form-select" id="studentNamesInput">
+                                <option selected>Search Students</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="col no-padding-right">
+                            <select class="form-select" id="assignmentNamesInput">
+                                <option selected>Search Assignments</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                    </div>  
+                </div>  
+                
+                <button type="button" class="btn btn-secondary button-margin-top-bottom"><i class="fa-solid fa-filter black-icon icon-padding-right"></i><span class="black-icon">Apply Filter</span></button>
+
+                <div class="col-11">
+                    <div class="table-responsive page-margin table-display">
+                        <table class="table table-bordered table-font vertical-align-middle">
+                            <thead>
+                            <tr class="thead table-secondary text-center vertical-align-middle">
+                                <th class="text-left">Student Name</th>
+                                <th class="normal-font-weight">A1 SETUP<br/>Out of 100</th>
+                                <th class="normal-font-weight">A2 HTML<br/>Out of 100</th>
+                                <th class="normal-font-weight">A3 CSS<br/>Out of 100</th>
+                                <th class="normal-font-weight">A4 BOOTSTRAP<br/>Out of 100</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr class="table text-center vertical-align-middle">
+                                <td class="text-left"><span class="text-red">Alice Wonderland</span></td>
+                                <td>
+                                    <input type="number" max="100" min="0"
+                                        class="form-control no-padding text-center table-font"
+                                        id="text-fields-grade-a1"
+                                        placeholder="100">
+                                </td>
+                                <td>98</td>
+                                <td>85</td>
+                                <td>100</td>
+
+                            </tr>
+                            <tr class="table-secondary text-center">
+                                <td class="text-left"><span class="text-red">Princess Leia</span></td>
+                                <td>10</td>
+                                <td>
+                                    <input type="number" max="100" min="0"
+                                        class="form-control no-padding text-center table-font"
+                                        id="text-fields-grade-a2"
+                                        placeholder="98">
+                    
+                                </td>
+                                <td>95</td>
+                                <td>75</td>
+                            </tr>
+                            <tr class="table text-center">
+                                <td class="text-left"><span class="text-red">Luke Skywalker</span></td>
+                                <td>95</td>
+                                <td>100</td>
+                                <td>85</td>
+                                <td>85</td>
+                            </tr>
+                            <tr class="table-secondary text-center">
+                                <td class="text-left"><span class="text-red">Han Solo</span></td>
+                                <td>98</td>
+                                <td>100</td>
+                                <td>66</td>
+                                <td>
+                                    <input type="number" max="100" min="0"
+                                        class="form-control no-padding text-center table-font"
+                                        id="text-fields-grade-a4"
+                                        placeholder="88">
+                                </td>
+                            </tr>
+                            <tr class="table text-center">
+                                <td class="text-left"><span class="text-red">Luke Skywalker</span></td>
+                                <td>95</td>
+                                <td>100</td>
+                                <td>85</td>
+                                <td>85</td>
+                            </tr>
+                            <tr class="table table-secondary text-center">
+                                <td class="text-left"><span class="text-red">Luke Skywalker</span></td>
+                                <td>95</td>
+                                <td>100</td>
+                                <td>85</td>
+                                <td>85</td>
+                            </tr>
+                            <tr class="table text-center">
+                                <td class="text-left"><span class="text-red">Luke Skywalker</span></td>
+                                <td>95</td>
+                                <td>100</td>
+                                <td>85</td>
+                                <td>85</td>
+                            </tr>
+                            <tr class="table table-secondary text-center">
+                                <td class="text-left"><span class="text-red">Luke Skywalker</span></td>
+                                <td>95</td>
+                                <td>100</td>
+                                <td>85</td>
+                                <td>85</td>
+                            </tr>
+                            <tr class="table text-center">
+                                <td class="text-left"><span class="text-red">Luke Skywalker</span></td>
+                                <td>95</td>
+                                <td>100</td>
+                                <td>85</td>
+                                <td>85</td>
+                            </tr>
+                            <tr class="table table-secondary text-center">
+                                <td class="text-left"><span class="text-red">Luke Skywalker</span></td>
+                                <td>95</td>
+                                <td>100</td>
+                                <td>85</td>
+                                <td>85</td>
+                            </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+

@@ -1,0 +1,69 @@
+/* Reset default margin and padding */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the navbar */
+.navbar {
+    background-color: black;
+    color: white;
+    padding: 10px 0;
+}
+
+/* Style the navbar list */
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Style the navbar links */
+.navbar a {
+    text-decoration: none;
+    color: red;
+    font-weight: normal;
+    font-size: small;
+}
+
+a#nav-bar-link:hover{
+    text-decoration: underline;
+}
+
+.navbar-nav{
+    background-color: white;
+    text-align: left !important;
+}
+
+
+
+/* Style the dropdown menu items */
+.navbar .navbar-collapse .navbar-nav .nav-item .dropdown-menu {
+    background-color: white !important;
+}
+
+
+.nav-icon-padding-l-r{
+    padding-left: 15px;
+    padding-right: 8px;
+
+}
+
+.navbar-nav .nav-item {
+    display: flex;
+    align-items: center;
+}
+.navbar-nav .nav-item a:hover {
+    color:red;
+    text-decoration: underline;
+
+}
+
+.navbar-nav .nav-item a:focus {
+    color:red;
+
+}
+
+
+

@@ -1,95 +1,127 @@
-<table border="0" width="100%">
-    <tbody>
-        <tr VALIGN=TOP>
-            <td style="width:10%">
-                <ul>
-                    <li><a href="/kanbas/profile/index.html">Account</a></li>
-                    <li><a href="#">Dashboard</a></li>
-                    <li><a href="/kanbas/home.html">Courses</a></li>
-                    <li><a href="#">Calendar</a></li>
-                    <li><a href="#">Inbox</a></li>
-                    <li><a href="#">History</a></li>
-                    <li><a href="#">Studio</a></li>
-                    <li><a href="#">Commons</a></li>
-                    <li><a href="#">Help</a></li>
-                 </ul>
-            </td>
-            <td style="width:15%">
-                <ul>
-                    <li><a href="#">Notifications</a></li>
-                    <li><a href="/kanbas/profile/index.html">Profile</a></li>
-                    <li><a href="#">Files</a></li>
-                    <li><a href="#">Settings</a></li>
-                    <li><a href="#">ePortfolios</a></li>
-                    <li><a href="#">Shared Content</a></li>
-                    <li><a href="#">The Hub</a></li>
-                    <li><a href="#">Qwickly Course Tools</a></li>
-                    <li><a href="#">Global Announcments</a></li>
-                 </ul>
-            </td>
-            <td>
-                <h2>Raquel Garcia</h2>
-                <form id="text-fields">
-                    <label for="text-fields-name">Name:*</label>
-                    <input id="text-fields-name" placeholder="Raquel Garcia"/>
-                    <label>Pronouns:</label>
-                    <select>
-                        <option value="VAL1" selected>None</option>
-                        <option value="VAL2">She/Her</option>
-                        <option value="VAL3">He/Him</option>
-                        <option value="VAL4">They/Them</option>
-                     </select>
-                    <br/><br/>
-                    <label for="text-fields-title">Title:</label>
-                    <input id="text-fields-title"/><br/>
-                </form>
+<html>
+    <head>
+       
+        
+         <!--<link href="../../vendors/fontawesome/css/all.css" rel="stylesheet"/>-->
+         <link href="../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+         <script src="https://kit.fontawesome.com/79c0dc1f30.js" crossorigin="anonymous"></script>
+         <link href="../index.css"
+         rel="stylesheet"/>
+    </head>
+    <body>
+        <div class="wd-flex-row-container padding-bottom-table">
+            <div class="d-none d-lg-block">
+                <div class="container" id="id-principle-nav">
+                    <div class="list-group nav-bar-position" id="id-priciple-nav-group">
+                        <a href="/kanbas/profile/index.html" class="list-group-item list-group-item-action nav-padding-all-around principle-selection"><i id ="id-account-image" class="fa-solid fa-user fa-2x nav-margin-bottom fa-border style-border-radius-white"></i><br/>Account</a>
+                        <a href="/kanbas/dashboard/index.html" class="list-group-item list-group-item-action nav-padding-all-around"><i class="fa-solid fa-gauge-high fa-2x nav-margin-bottom"></i><br/>Dashboard</a>
+                        <a href="/kanbas/home.html" class="list-group-item list-group-item-action nav-padding-all-around"><i class="fa-solid fa-book fa-2x nav-margin-bottom"></i><br/>Courses</a>
+                        <a href="#" class="list-group-item list-group-item-action nav-padding-all-around"><i class="fa-regular fa-calendar-days fa-2x nav-margin-bottom"></i><br/>Calendar</a>
+                        <a href="#" class="list-group-item list-group-item-action nav-padding-all-around"><i class="fa-solid fa-inbox fa-2x nav-margin-bottom"></i><br/>Inbox</a>
+                        <a href="#" class="list-group-item list-group-item-action nav-padding-all-around"><i class="fa-regular fa-clock fa-2x nav-margin-bottom"></i><br/>History</a>
+                        <a href="#" class="list-group-item list-group-item-action nav-padding-all-around"><i class="fa-solid fa-photo-film fa-2x nav-margin-bottom"></i><br/>Studio</a>
+                        <a href="#" class="list-group-item list-group-item-action nav-padding-all-around"><i class="fa-solid fa-arrow-up-from-bracket fa-rotate-90 fa-2x nav-margin-bottom"></i><br/>Commons</a>
+                        <a href="#" class="list-group-item list-group-item-action nav-padding-all-around"><i class="fa-regular fa-circle-question fa-2x nav-margin-bottom"></i><br/>Help</a>
+                    </div>
+                </div>
+            </div>
+            <div class="d-none d-lg-block page-margin-right">
+                <div class="container no-padding" id="id-account-nav">
+                    <div class="list-group account-nav-width account-nav-position" id="id-account-nav-group">
+                        <a href="#" class="list-group-item list-group-item-action">Notifications</a>
+                        <a href="/kanbas/profile/index.html" class="list-group-item list-group-item-action current-page">Profile</a>
+                        <a href="#" class="list-group-item list-group-item-action">Files</a>
+                        <a href="#" class="list-group-item list-group-item-action">Settings</a>
+                        <a href="#" class="list-group-item list-group-item-action">ePortfolios</a>
+                        <a href="#" class="list-group-item list-group-item-action">Shared Content</a>
+                        <a href="#" class="list-group-item list-group-item-action">The Hub</a>
+                        <a href="#" class="list-group-item list-group-item-action">Qwickly Course Tools</a>
+                        <a href="#" class="list-group-item list-group-item-action">Global Announcments</a></li>
+                    </div>
+                </div>
+            </div>
+            <div class="wd-flex-grow-1" id="id-profile-screen">
+                <p> <i class="fa-solid fa-bars breadcrumb-icon-size button-margin-larger"></i>Raquel Garcia's Profile</p>
+                <hr class="padding-bottom-table">
+                <a href="/kanbas/profile/index.html"><button type= "button" class= "btn btn-primary float-end">
+                    <i class="fa-solid fa-pencil fa-flip-horizontal" id="id-profile-pencil-image"></i> Cancel Editing</button></a>
+                <i id ="id-account-image-large" class="fa-solid fa-user fa-10x fa-border style-border-radius"></i>
+                <h2 class="button-margin-top">Raquel Garcia</h2>
+                <div class="mb-3">
+                    <label for="inputName" class="form-label">Name:*</label>
+                    <input type="text" class="form-control w-50" id="inputName" value="Raquel Garcia" placeholder="Raquel Garcia">
+                </div>
+                <div>
+                <label for="gender-select">Pronouns:</label>
+                <select class="form-select w-25" id="gender-select">
+                    <option value="None"selected>None</option>
+                    <option value="she/her">She/Her</option>
+                    <option value="he/him">He/Him</option>
+                    <option value="they/them">They/Them</option>
+                 </select>
+                </div><br/>
+
+                <div class="mb-3">
+                    <label for="inputTitle" class="form-label">Title:</label>
+                    <input type="text" class="form-control w-50" id="inputTitle">
+                </div>
+            
                 <h3>Contact</h3>
-                <p>No registered services, you can add some in the <a href="#">settings</a> page.</p>
-                <h3>Biography</h3>
-                <p>Graduate student, Software Engineer, and social equity enthusiast.</p>
-                <form id="textarea">
-                    <textarea cols="50" rows="5">Graduate student, Software Engineer, and social equity enthusiast.</textarea>
-                 </form>
+                <p>No registered services, you can add some in the <a href="#" id="id-profile-link">settings</a> page.</p>
+
+                 <div class="mb-3">
+                    <label for="textarea1"
+                           class="form-label"><h3>Biography</h3></label>
+                    <textarea class="form-control w-50"
+                              id="textarea1"
+                              rows="3">Graduate student, Software Engineer, and social equity enthusiast.</textarea>
+                  </div>
+                  
                 <h3>Links</h3>
-                <ul>
-                    <li><a href="youtube.com">YouTube</a> <font color="blue">Links to an external site</font></li>
-                </ul>
 
-                <table border="0" width="30%">
-                    <thead>
-                    <tr>
-                        <th>Title</th>
-                        <th> </th>
-                        <th>URL</th>
-                        <th> </th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td style="text-align: center">
-                            <form style="display:inline" id="text-fields-grade">
-                                <input id="text-fields-grade-a1" value= "YouTube" placeholder="YouTube" style="text-align: center"/>
-                            </form>
-                        </td>
-                        <td style="text-align: center">→</td>
-                        <td style="text-align: center">
-                            <form style="display:inline" id="text-fields-grade">
-                                <input type="url" id="text-fields-grade-a1" value="http://youtube.com" placeholder="http://youtube.com" style="text-align: center"/>
-                            </form>
-                        </td>
-                        <td><a href="#">Remove</a></td>
-                    </tr>
-                    </tbody>
-                </table>
+                <div class="container text-center">
+                    <!--Row 1-->
+                    <div class="row">
+                      <div class="col-md-4 bold-text">
+                        Title
+                      </div>
+                      <div class="col-md-1">
+                      </div>
+                      <div class="col-md-4 bold-text">
+                        URL
+                      </div>
+                      <div class="col-md-1">
+                      </div>
+                    </div>
+                    <!--Row 2-->
+                    <div class="row">
+                        <div class="col-md-4 p-0">
+                            <div class="mb-3 center-text-input">
+                                <input type="text" class="form-control" id="inputLink" value="YouTube" placeholder="YouTube">
+                            </div>
+                        </div>
+                        <div class="col-md-1">
+                          <i class="fa-solid fa-arrow-right black-icon icon-padding-top"></i>
+                        </div>
+                        <div class="col-md-4 p-0">
+                            <div class="mb-3 center-text-input">
+                                <input type="url" class="form-control" id="inputUrlLink" value="https://www.youtube.com/@WebDevTV" placeholder="https://www.youtube.com/@WebDevTV">
+                            </div>
+                        </div>
+                        <div class="col-md-1">
+                            <i class="fa-solid fa-x icon-padding-top"></i>
+                        </div>
+                      </div>
+                  </div>
+                  <a href="#"><button type= "button" class= "btn btn-primary btn-small">Add another link</button></a><br/>
 
-                <button type="button">Add another link</button><br/>
-                <button type="button">Cancel</button>
-                <button type="button" onclick="window.location='/kanbas/profile/index.html'">Save Profile</button><br/>
-                <button type="button" onclick="window.location='/kanbas/profile/edit.html'">Edit Profile</button>
-                <button type="button" onclick="window.location='/kanbas/profile/index.html'">Cancel Editing</button>
+                  <a href="#"><button type= "button" class= "btn btn-primary float-end">Cancel</button></a>
+                  <a href="/kanbas/profile/index.html"><button type = "button" class= "btn btn-primary float-end" id="id-btn-save-profile">Save Profile</button></a>
+            </div>
+        </div>
 
-                
-            </td>
-        </tr>
-    </tbody>
-</table>
+
+
+       
+    </body>
+</html>
