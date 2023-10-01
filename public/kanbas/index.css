@@ -465,8 +465,8 @@ text-decoration: underline;
 }
 
 .nav-style{
-   padding-bottom: 0;
-   margin-bottom: 10px
+   padding-bottom: 0 !important;
+   margin-bottom: 10px !important;
 }
 
 .close-end-style{
