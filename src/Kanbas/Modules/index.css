@@ -1,0 +1,18 @@
+.wd-red{
+    color: red;
+ }
+
+ .custom-breadcrumb {
+   --bs-breadcrumb-divider: '>';
+}
+
+.link-style {
+   color:red;
+   text-decoration: none;
+
+}
+.link-style:hover {
+color: red;
+text-decoration: underline;
+
+}

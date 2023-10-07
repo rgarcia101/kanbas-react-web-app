@@ -1,0 +1,32 @@
+.wd-icon {
+    font-size: 2em; /* Adjust the font size as needed to make the icons larger */
+    margin-bottom: 8px; /* Add spacing between the icon and the text */
+    color: red;
+}
+
+#id-principle-nav .list-group-item {
+    width: 85px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 0;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    border-color: transparent;
+
+ }
+
+.wd-principle-nav-links:focus {
+    background-color: white !important;
+    color: red !important;
+}
+
+#id-account-image{
+    fill: grey !important;
+    background-color: white !important;
+    border-radius:60%;
+}
+
+

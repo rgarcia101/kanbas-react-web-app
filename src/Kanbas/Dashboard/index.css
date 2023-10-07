@@ -1,0 +1,38 @@
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.wd-dashboard-grid .col {
+    width: 270px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .page-margin-left {
+    margin-left: 20px;
+  }
+  .page-margin-right {
+    margin-right: 20px;
+  }
+
+.card-style{
+  width: 270px;
+  text-decoration: none;
+}
+
+.card-style:hover{
+  text-decoration: underline;
+}
+
+#course-name{
+  color: blue;
+}
+
+.wd-grey{
+  color:grey;
+}
+
+.wd-font-small{
+  font-size: small;
+}

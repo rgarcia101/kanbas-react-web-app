@@ -1,0 +1,37 @@
+.page-margin-left {
+    margin-left: 20px;
+  }
+  .page-margin-right {
+    margin-right: 20px;
+  }
+.icon-padding-top{
+    margin-top: 15px;
+ }
+
+ .hamburger-icon {
+    padding-right: 25px;
+    font-size: 1.5em;
+ }
+
+ .font-large{
+    font-size: large;
+ }
+
+ .wd-red{
+    color: red;
+ }
+
+ .custom-breadcrumb {
+   --bs-breadcrumb-divider: '>';
+}
+
+.link-style {
+   color:red;
+   text-decoration: none;
+
+}
+.link-style:hover {
+color: red;
+text-decoration: underline;
+
+}
