@@ -1,5 +1,5 @@
 import './index.css'
-import { Link, useLocation } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import {BiSolidUserCircle} from "react-icons/bi";
 import {TfiDashboard} from "react-icons/tfi";
 import {FaBook} from "react-icons/fa";
@@ -36,7 +36,14 @@ function KanbasNavigation() {
         <Link
           key={index}
           to={`/Kanbas/${link}`}
-          className={`list-group-item ${pathname.includes(link) && "active"} wd-principle-nav-links`}>
+          className={`list-group-item ${pathname.includes(link) && "active"} wd-principle-nav-links`}
+          style={pathname.includes(link) && link === "Dashboard" || pathname.includes(link) && link === "Account"
+          || pathname.includes(link) && link === "Courses" || pathname.includes(link) && link === "Calendar" 
+          || pathname.includes(link) && link === "Inbox" || pathname.includes(link) && link === "History" 
+          || pathname.includes(link) && link === "Studio" || pathname.includes(link) && link === "Commons"
+          || pathname.includes(link) && link === "Help" ? { background: 'white', color: 'red' } : {}}
+          >
+          
           {linkToIconMap[link]}
           <br />
           {link}

@@ -23,6 +23,11 @@
     color: red !important;
 }
 
+.wd-principle-nav-links .principle-selection {
+    background-color: white !important;
+    color: red !important;
+}
+
 #id-account-image{
     fill: grey !important;
     background-color: white !important;
