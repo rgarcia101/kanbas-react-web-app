@@ -1,0 +1,58 @@
+.page-margin {
+    margin-right: 30px;
+  }
+.black-color{
+    color:black;
+}
+.icon-padding-right{
+    padding-right: 5px !important;
+ }
+
+ .icon-padding-right-larger{
+    padding-right: 10px !important;
+ }
+
+ .padding-bottom-table{
+    padding-bottom: 15px !important;
+ }
+
+ .padding-top-table{
+    padding-top: 15px !important;
+ }
+
+ .bold-text{
+    font-weight: bold !important;
+ }
+
+ .icon-padding{
+    padding-right: 5px !important;
+    padding-left: 5px !important;
+ }
+
+ .green-left-border {
+    border-left: 8px solid green;
+  }
+
+  .no-border-radius{
+    border-radius: 0 !important;
+  }
+
+  .green-color{
+    color: green;
+  }
+
+  .small-font {
+    font-size: small;
+  }
+
+  .red-color{
+    color:red;
+  }
+
+  .text-indent-normal{
+    padding-left: 50px;
+  }
+
+  .padding-top-icon{
+    padding-top: 10px;
+  }

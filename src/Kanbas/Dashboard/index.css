@@ -23,6 +23,7 @@
 
 .card-style:hover{
   text-decoration: underline;
+  color: red;
 }
 
 #course-name{

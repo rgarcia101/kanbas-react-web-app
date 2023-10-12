@@ -2,7 +2,9 @@ import db from "../../Kanbas/Database";
 import { Navigate, Route, Routes, useParams, Link, useLocation } from "react-router-dom";
 import CourseNavigation from "../CourseNavigation";
 import Modules from "../Modules";
-import Home from "../Home";
+import Home from "./Home";
+import Assignments from "./Assignments";
+import AssignmentEditor from "./Assignments/AssignmentEditor";
 import {RxHamburgerMenu} from "react-icons/rx"
 import './index.css'
 
@@ -73,36 +75,11 @@ function Courses() {
 
   const currentBreadcrumbLabel = getBreadcrumbLabel(pathname);
 
-  console.log("Here is the current breadcrumb label: ", currentBreadcrumbLabel)
-
   return (
-    <div className="page-margin-left page-margin-right icon-padding-top">
-      
-      {/* <p class="font-large wd-red"><span class="hamburger-icon"><RxHamburgerMenu/></span>      
-       {course.name}</p> */}
-
-       <nav className="custom-breadcrumb" aria-label="breadcrumb">
-        <ol className="breadcrumb">
-          <span className="font-large wd-red"><span className="hamburger-icon"><RxHamburgerMenu/></span>
-          <li className="breadcrumb-item active">
-              <Link to={pathname} className="link-style">{course.name}</Link>
-            </li>
-            {currentBreadcrumbLabel && (
-              <li className="breadcrumb-item active" aria-current="page">
-                {currentBreadcrumbLabel}
-              </li>
-            )}
-          
-          
-          
-          {/* <li class="breadcrumb-item active"><a class="link-style" href="#">{course.name}</a></li>  
-          <li class="breadcrumb-item active" aria-current="page">Home</li> */}
-          {/* if route == "home" show home etc.. how to do this??? */}
-          </span>
-        </ol>
-      </nav>
-
-      <hr/>
+    <div className="page-margin-left page-margin-right">
+      <span className="font-large wd-red"><span className="hamburger-icon"><RxHamburgerMenu/></span></span><span><Link to={pathname} className="link-style">{course.name}</Link> {">"} {currentBreadcrumbLabel}</span>
+      <hr></hr>
+    
       <CourseNavigation />
       <div>
         <div
@@ -118,11 +95,10 @@ function Courses() {
             <Route path="Modules" element={<Modules/>} />
             <Route path="Piazza" element={<h1>Piazza</h1>} />
             <Route path="Zoom Meetings" element={<h1>Zoom Meetings</h1>} />
-            <Route path="Assignments" element={<h1>Assignments</h1>} />
+            <Route path="Assignments" element={<Assignments/>} />
             <Route
               path="Assignments/:assignmentId"
-              element={<h1>Assignment Editor</h1>}
-            />
+              element={<AssignmentEditor/>}/>
             <Route path="Quizzes" element={<h1>Quizzes</h1>} />
             <Route path="Grades" element={<h1>Grades</h1>} />
             <Route path="People" element={<h1>People</h1>} />

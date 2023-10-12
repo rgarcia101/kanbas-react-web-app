@@ -1,6 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import db from "../../Kanbas/Database";
+import {BsGripVertical} from "react-icons/bs"
 import './index.css'
 
 function ModuleList() {
@@ -8,12 +9,14 @@ function ModuleList() {
   const modules = db.modules.filter(
     (module) => module.course === courseId);
   return (
-        <ul className="list-group">
+        <ul className="list-group page-margin-right ">
         {
         modules.map((module, index) => (
-            <li key={index} className="list-group-item">
-            <h3>{module.name}</h3>
-            <p>{module.description}</p>
+            <li key={index} className="list-group-item list-group-item-secondary module-styling">
+              <div className="vertical-align">
+              <p><BsGripVertical/><span className="font-bold">{module.name}</span> - {module.description}</p>
+              </div>
+           
             </li>
         ))
         }

@@ -15,9 +15,7 @@ function Dashboard() {
             <img src="../../images/starship.jpg" class="card-img-top" alt="..." />
             <div className="card-body">
               <h5 className="card-title" id="course-name">{course.name}</h5>
-              <p className="card-text wd-grey wd-font-small">Course Number: {course.number}</p>
-              <p className="card-text wd-grey wd-font-small">Start Date: {course.startDate}</p>
-              <p className="card-text wd-grey wd-font-small">End Date: {course.endDate}</p>
+              <p className="card-text wd-grey">Course Number: {course.number} <br/><span className="wd-font-small">Start Date: {course.startDate} End Date: {course.endDate}</span></p>
             </div>
           </Link>
         ))}

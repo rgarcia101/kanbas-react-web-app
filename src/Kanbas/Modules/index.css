@@ -16,3 +16,52 @@ color: red;
 text-decoration: underline;
 
 }
+
+.vertical-float{
+   vertical-align: middle;
+}
+
+.page-margin-left {
+   margin-left: 20px;
+ }
+
+ .page-margin-left-15 {
+  margin-left: 15px;
+}
+ .page-margin-right{
+   margin-right: 15px;
+ }
+
+ .page-margin-top{
+  margin-top: 15px;
+ }
+
+ .margin-bottom-list{
+   margin-bottom: 8px !important;
+ }
+
+ .no-radius-border{
+   border-radius: 0 !important;
+ }
+
+ .page-margin{
+   margin-left: 20px;
+   margin-right: 20px;
+ }
+
+ .module-styling{
+   margin-top: 10px;
+   margin-bottom: 10px;
+   border-radius: 0% !important;
+   padding-bottom: 0;
+   
+ }
+
+ .vertical-align{
+   display: flex !important;
+   align-items: center !important;
+ }
+
+ .font-bold{
+   font-weight: bold;
+ }
