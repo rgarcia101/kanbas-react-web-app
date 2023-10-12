@@ -1,0 +1,37 @@
+.table-display{
+    display: block;
+  }
+
+  .page-margin-top{
+    margin-top: 15px;
+   }
+.black-color{
+    color:black;
+}
+
+.page-margin {
+    margin-right: 30px;
+  }
+
+  .button-margin{
+    margin-right: 8px;
+  }
+  .text-padding-top {
+    padding-top: 10px;
+ }
+
+ .button-margin-top-bottom{
+    margin-top: 8px !important;
+    margin-bottom: 8px !important;
+  }
+
+  .no-padding {
+    padding: 0 !important;
+ }
+
+ .icon-padding-right{
+    padding-right: 5px;
+ }
+ .red-color{
+    color: red;
+ }
