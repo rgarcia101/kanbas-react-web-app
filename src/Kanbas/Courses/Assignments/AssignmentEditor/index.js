@@ -19,7 +19,7 @@ function AssignmentEditor() {
   };
   return (
     <div className="page-margin">
-      <label for="assignmentFormControlInput" class="form-label">Assignment Name</label>
+      <label for="assignmentFormControlInput" className="form-label">Assignment Name</label>
       <input value={assignment.title}
              className="form-control mb-2" id="assignmentFormControlInput"/>
       <hr></hr>

@@ -7,7 +7,7 @@ function CourseNavigation() {
   const { pathname } = useLocation();
   console.log("PATHNAME: ", pathname, typeof(pathname))
   return (
-    <div className="list-group" id = "id-account-nav">
+    <div className="list-group page-margin-left page-margin-right" id = "id-account-nav">
       {links.map((link, index) => (
         <Link
           key={index}

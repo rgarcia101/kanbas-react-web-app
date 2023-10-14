@@ -9,40 +9,40 @@ function Grades() {
   const enrollments = db.enrollments.filter((enrollment) => enrollment.course === courseId);
   return (
     <div className="page-margin">
-        <button type="button" class="btn btn-secondary button-margin float-end  black-color"><BsFillGearFill/></button>
+        <button type="button" className="btn btn-secondary button-margin float-end  black-color"><BsFillGearFill/></button>
                 
-                <div class="dropdown float-end button-margin">
-                    <button class="btn btn-secondary dropdown-toggle black-color" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <span className="black-color icon-padding"><FaFileExport/></span><span class="black-color">Export</span>
+                <div className="dropdown float-end button-margin">
+                    <button className="btn btn-secondary dropdown-toggle black-color" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span className="black-color icon-padding"><FaFileExport/></span><span className="black-color">Export</span>
                     </button>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <ul className="dropdown-menu">
+                      <li><a className="dropdown-item" href="#">Action</a></li>
+                      <li><a className="dropdown-item" href="#">Another action</a></li>
+                      <li><a className="dropdown-item" href="#">Something else here</a></li>
                     </ul>
                   </div>
-                <button type="button" class="btn btn-secondary button-margin float-end"><span className="black-color icon-padding"><FaFileImport/></span><span class="black-color">Import</span></button><br/><br/>
+                <button type="button" className="btn btn-secondary button-margin float-end"><span className="black-color icon-padding"><FaFileImport/></span><span className="black-color">Import</span></button><br/><br/>
                 
-                <div class="container no-padding">
-                    <div class="row text-padding-top">
-                        <div class="col-md-6">
-                            <label for="studentNamesInput" class="form-label bold-text">Student Names</label>
+                <div className="container no-padding">
+                    <div className="row text-padding-top">
+                        <div className="col-md-6">
+                            <label for="studentNamesInput" className="form-label bold-text">Student Names</label>
                         </div>
-                        <div class="col-md-6 no-padding-left">
-                            <label for="assignmentNamesInput" class="form-label bold-text">Assignment Names</label>
+                        <div className="col-md-6 no-padding-left">
+                            <label for="assignmentNamesInput" className="form-label bold-text">Assignment Names</label>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col">
-                            <select class="form-select" id="studentNamesInput">
+                    <div className="row">
+                        <div className="col">
+                            <select className="form-select" id="studentNamesInput">
                                 <option selected>Search Students</option>
                                 <option value="1">One</option>
                                 <option value="2">Two</option>
                                 <option value="3">Three</option>
                             </select>
                         </div>
-                        <div class="col no-padding-right">
-                            <select class="form-select" id="assignmentNamesInput">
+                        <div className="col no-padding-right">
+                            <select className="form-select" id="assignmentNamesInput">
                                 <option selected>Search Assignments</option>
                                 <option value="1">One</option>
                                 <option value="2">Two</option>
@@ -52,7 +52,7 @@ function Grades() {
                     </div>  
                 </div>  
                 
-            <button type="button" class="btn btn-secondary button-margin-top-bottom"><span className="black-color icon-padding-right"><FaFilter/></span><span class="black-color">Apply Filter</span></button>
+            <button type="button" className="btn btn-secondary button-margin-top-bottom"><span className="black-color icon-padding-right"><FaFilter/></span><span className="black-color">Apply Filter</span></button>
 
       <h1 className="page-margin-top">Grades</h1>
       <div className="table-responsive">

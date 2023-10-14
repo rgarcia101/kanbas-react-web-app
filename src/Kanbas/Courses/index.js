@@ -75,10 +75,9 @@ function Courses() {
   };
 
   const currentBreadcrumbLabel = getBreadcrumbLabel(pathname);
-
   return (
-    <div className="page-margin-left page-margin-right">
-      <span className="font-large wd-red"><span className="hamburger-icon"><RxHamburgerMenu/></span></span><span><Link to={pathname} className="link-style">{course.name}</Link> {">"} {currentBreadcrumbLabel}</span>
+    <div>
+      <span className="font-large wd-red page-margin-left"><span className="hamburger-icon"><RxHamburgerMenu/></span></span><span><Link to={pathname} className="link-style">{course.name}</Link> {">"} {currentBreadcrumbLabel}</span>
       <hr></hr>
     
       <CourseNavigation />

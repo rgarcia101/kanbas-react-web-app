@@ -16,17 +16,17 @@ function Assignments() {
   const courseAssignments = assignments.filter(
     (assignment) => assignment.course === courseId);
   return (
-    <div className="page-margin">
-      <button type="button" class="btn btn-secondary float-end"><span className="black-color"><BsThreeDotsVertical/></span></button>
-      <button type="button" class="btn btn-danger button-margin float-end"><span className="icon-padding-right"><AiOutlinePlus/></span> Assignment</button>
-      <button type="button" class="btn btn-secondary button-margin float-end"><span className="black-color"><AiOutlinePlus/> Group</span></button>
-      <input type="text" class="form-control w-25" id="seachFormControlInput" placeholder="Search for Assignment"></input>
+    <div className="page-margin padding-top-table">
+      <button type="button" className="btn btn-secondary float-end"><span className="black-color"><BsThreeDotsVertical/></span></button>
+      <button type="button" className="btn btn-danger button-margin float-end"><span className="icon-padding-right"><AiOutlinePlus/></span> Assignment</button>
+      <button type="button" className="btn btn-secondary button-margin float-end"><span className="black-color"><AiOutlinePlus/> Group</span></button>
+      <input type="text" className="form-control w-25" id="seachFormControlInput" placeholder="Search for Assignment"></input>
 
       <hr></hr>
       
      
       <div className="list-group no-border-radius">
-        <li className="list-group-item list-group-item-secondary padding-bottom-table padding-top-table"><BsGripVertical/> <span className="bold-text">ASSIGNMENTS FOR COURSE {courseId}</span><span className="float-end icon-padding"><BsThreeDotsVertical/></span><span className="float-end icon-padding"><AiOutlinePlus/></span><span className="badge rounded-pill bg-secondary float-end"><span class="black-color">40% of Total</span></span></li>
+        <li className="list-group-item list-group-item-secondary padding-bottom-table padding-top-table"><BsGripVertical/> <span className="bold-text">ASSIGNMENTS</span><span className="float-end icon-padding"><BsThreeDotsVertical/></span><span className="float-end icon-padding"><AiOutlinePlus/></span><span className="badge rounded-pill bg-secondary float-end"><span className="black-color">40% of Total</span></span></li>
         <div className="green-left-border">
         {courseAssignments.map((assignment) => (
           <Link
