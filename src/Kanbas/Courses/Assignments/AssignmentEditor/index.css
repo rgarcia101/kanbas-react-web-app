@@ -6,3 +6,22 @@
 .page-margin {
     margin-right: 30px;
 }
+
+.padding-top-table{
+    padding-top: 15px !important;
+ }
+
+ .button-margin{
+    margin-right: 8px;
+  }
+
+  .non-clickable {
+    pointer-events: none; /* Disable click events */
+    border-color: transparent !important; /* Remove border color */
+    color: green !important; /* Set the text color to green */
+    background-color: transparent !important; /* Remove background color */
+ }
+
+ .icon-padding-right{
+    padding-right: 5px !important;
+ }

@@ -2,6 +2,8 @@ import React from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import db from "../../../Database";
 import { Link } from "react-router-dom";
+import {AiFillCheckCircle} from "react-icons/ai";
+import {BsThreeDotsVertical} from "react-icons/bs";
 import './index.css';
 
 
@@ -18,7 +20,15 @@ function AssignmentEditor() {
     navigate(`/Kanbas/Courses/${courseId}/Assignments`);
   };
   return (
-    <div className="page-margin">
+    <div className="page-margin padding-top-table">
+      <button type="button" className="btn btn-secondary float-end"><span className="black-color"><BsThreeDotsVertical/></span></button>
+      <button type="button" className="btn btn-outline-success non-clickable float-end button-margin">
+          <span className="icon-padding-right"><AiFillCheckCircle/></span>
+          <span>Published</span>
+      </button>
+      <br/><br/>
+      <hr></hr>
+
       <label for="assignmentFormControlInput" className="form-label">Assignment Name</label>
       <input value={assignment.title}
              className="form-control mb-2" id="assignmentFormControlInput"/>
