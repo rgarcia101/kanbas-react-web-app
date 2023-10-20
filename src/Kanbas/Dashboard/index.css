@@ -21,7 +21,7 @@
   text-decoration: none;
 }
 
-.card-style:hover{
+.link-style:hover{
   text-decoration: underline;
   color: red;
 }
@@ -36,4 +36,8 @@
 
 .wd-font-small{
   font-size: small;
+}
+
+.button-margin{
+  margin-right: 8px;
 }

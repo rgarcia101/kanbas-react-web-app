@@ -9,9 +9,9 @@ import Grades from "./Grades";
 import {RxHamburgerMenu} from "react-icons/rx"
 import './index.css'
 
-function Courses() {
+function Courses({ courses }) {
   const { courseId } = useParams();
-  const course = db.courses.find((course) => course._id === courseId);
+  const course = courses.find((course) => course._id === courseId);
   const { pathname } = useLocation();
   
 
