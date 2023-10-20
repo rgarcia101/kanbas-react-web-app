@@ -9,6 +9,8 @@
 //     );
 //  }
 //  export default Kanbas
+import store from "./store";
+import { Provider } from "react-redux";
 import { Routes, Route, Navigate } from "react-router-dom";
 import Dashboard from "./Dashboard";
 import KanbasNavigation from "./KanbasNavigation";
@@ -42,6 +44,7 @@ function Kanbas() {
   };
 
    return (
+    <Provider store={store}>
       <div className="d-flex">
         <KanbasNavigation />
         <div>
@@ -69,6 +72,7 @@ function Kanbas() {
 
         </div>
       </div>
+      </Provider>
     );
   
  }
