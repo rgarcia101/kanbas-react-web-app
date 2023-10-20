@@ -11,7 +11,7 @@ import './index.css'
 
 function Courses({ courses }) {
   const { courseId } = useParams();
-  const course = courses.find((course) => course._id === courseId);
+  const course = courses.find(c => String(c._id) === String(courseId));
   const { pathname } = useLocation();
   
 
