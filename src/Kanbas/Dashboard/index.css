@@ -41,3 +41,11 @@
 .button-margin{
   margin-right: 8px;
 }
+
+.button-margin-top{
+  margin-top: 8px;
+}
+
+.button-margin-bottom{
+  margin-bottom: 20px;
+}
