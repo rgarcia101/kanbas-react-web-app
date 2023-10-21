@@ -65,3 +65,7 @@ text-decoration: underline;
  .font-bold{
    font-weight: bold;
  }
+
+ .button-margin-bottom-small{
+  margin-bottom: 8px;
+ }

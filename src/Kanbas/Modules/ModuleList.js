@@ -14,53 +14,19 @@ function ModuleList() {
   const { courseId } = useParams();
   const modules = useSelector((state) => state.modulesReducer.modules);
   const module = useSelector((state) => state.modulesReducer.module);
-  const dispatch = useDispatch();
-  /*const [modules, setModules] = useState(db.modules);*/
-  /*const modules = db.modules.filter(
-    (module) => module.course === courseId);*/
-  /*const [module, setModule] = useState({
-    name: "New Module",
-    description: "New Description",
-    course: courseId,
-  });
-  const addModule = (module) => {
-    setModules([
-      { ...module, _id: new Date().getTime().toString() },
-      ...modules,
-    ]);
-  };
-
-  const deleteModule = (moduleId) => {
-    setModules(modules.filter(
-      (module) => module._id !== moduleId));
-  };
-
-  const updateModule = () => {
-    setModules(
-      modules.map((m) => {
-        if (m._id === module._id) {
-          return module;
-        } else {
-          return m;
-        }
-      })
-    );
-  }
-*/
-
-
-   
+  const dispatch = useDispatch();   
   return (
         <ul className="list-group page-margin-right ">
           <li className="list-group-item">
-        <button onClick={() => dispatch(addModule({ ...module, course: courseId }))}>Add</button>
-        <button onClick={() => dispatch(updateModule(module))}>
+        <button className="btn btn-success float-end" onClick={() => dispatch(addModule({ ...module, course: courseId }))}>Add</button>
+        <button className="btn btn-primary button-margin float-end" onClick={() => dispatch(updateModule(module))}>
                 Update
         </button>
-        <input value={module.name}
+        
+        <input className="form-control w-50" value={module.name}
           onChange={(e) =>  dispatch(setModule({ ...module, name: e.target.value }))}
         />
-        <textarea value={module.description}
+        <textarea className="form-control w-50 button-margin-top" value={module.description}
           onChange={(e) => dispatch(setModule({ ...module, description: e.target.value }))}
         />
       </li>
@@ -70,11 +36,11 @@ function ModuleList() {
         .filter((module) => module.course === courseId)
         .map((module, index) => (
             <li key={index} className="list-group-item list-group-item-secondary module-styling">
-              <button
+              <button className="float-end btn btn-primary"
               onClick={() => dispatch(setModule(module))}>
               Edit
             </button>
-              <button
+              <button className="float-end button-margin btn btn-danger "
               onClick={() => dispatch(deleteModule(module._id))}>
               Delete
             </button>
