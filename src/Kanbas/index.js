@@ -11,7 +11,7 @@
 //  export default Kanbas
 import store from "./store";
 import { Provider } from "react-redux";
-import { Routes, Route, Navigate } from "react-router-dom";
+import { Routes, Route, Navigate, useParams } from "react-router-dom";
 import Dashboard from "./Dashboard";
 import KanbasNavigation from "./KanbasNavigation";
 import Courses from "./Courses";
@@ -20,8 +20,13 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import { stringify } from 'flatted';
 function Kanbas() {
+  const { courseId } = useParams();
   const [courses, setCourses] = useState([]);
   const URL = "http://localhost:4000/api/courses";
+
+  
+
+
   const findAllCourses = async () => {
     const response = await axios.get(URL);
     setCourses(response.data);
@@ -41,14 +46,12 @@ function Kanbas() {
   // };
   const addNewCourse = async () => {
     const response = await axios.post(URL, course);
-    console.log(response);
-    console.log(response.data);
-    console.log(response.data);
     setCourses([
       response.data,
       ...courses,
     ]);
-    setCourse({ name: "" });
+    setCourse({name: "New Course", number: "New Number",
+    startDate: "2023-09-10", endDate: "2023-12-15"});
   };
 
 
@@ -64,54 +67,37 @@ function Kanbas() {
       (c) => c._id !== courseId));
   };
 
-
-
-
-  // const updateCourse = () => {
-  //   setCourses(
-  //     courses.map((c) => {
-  //       if (c._id === course._id) {
-  //         return course;
-  //       } else {
-  //         return c;
-  //       }
-  //     })
-  //   );
-  // };
-
-  // const updateCourse = async (courseId) => {
-  //   const response = await axios.put(
-  //     `${URL}/${courseId}`,
-  //     course
-  //   );
-  //   setCourses(
-  //     courses.map((c) => {
-  //       if (c._id === courseId) {
-  //         return response.data;
-  //       }
-  //       return c;
-  //     })
-  //   );
-  //   setCourse({ name: "" });
-  // };
-
-  const updateCourse = async (course) => {
+  const updateCourse = async () => {
     const response = await axios.put(
-          `${URL}/${course._id}`,
-          course
-        );
-    console.log(response.data);
+      `${URL}/${course._id}`,
+      course
+    );
     setCourses(
       courses.map((c) => {
         if (c._id === course._id) {
-          return response.data;
+          return course;
         }
         return c;
       })
     );
-    console.log(courses);
     setCourse({ name: "" });
   };
+
+
+
+  // const findCourseById = async (courseId) => {
+  //   const response = await axios.get(
+  //     `${URL}/${courseId}`
+  //   );
+  //   setCourse(response.data);
+  // };
+  // useEffect(() => {
+  //   findCourseById(courseId);
+  // }, [courseId]);
+
+
+  
+  
 
 
 
