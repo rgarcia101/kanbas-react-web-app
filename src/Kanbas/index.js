@@ -22,7 +22,9 @@ import { stringify } from 'flatted';
 function Kanbas() {
   const { courseId } = useParams();
   const [courses, setCourses] = useState([]);
-  const URL = "http://localhost:4000/api/courses";
+  //const URL = "http://localhost:4000/api/courses";
+  const URL = "https://kanbas-node-server-app-608j.onrender.com/api/courses";
+  //https://kanbas-node-server-app-608j.onrender.com/api/courses
 
   
 
