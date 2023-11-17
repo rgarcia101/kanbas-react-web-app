@@ -10,6 +10,7 @@ const MODULES_URL = `${API_BASE}/modules`;
 export const updateModule = async (module) => {
     const response = await axios.
       put(`${MODULES_URL}/${module._id}`, module);
+      //put(`${COURSES_URL}/${courseId}/modules/${module._id}`, module);
     return response.data;
   };
   
