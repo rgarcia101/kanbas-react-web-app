@@ -10,7 +10,6 @@ const { id } = useParams();
     const user = await client.findUserById(id);
     setAccount(user);
   };
-
   const fetchAccount = async () => {
     const account = await client.account();
     setAccount(account);
@@ -27,9 +26,16 @@ const { id } = useParams();
     await client.updateUser(account);
   };
 
+  const signout = async () => {
+    await client.signout();
+    navigate("/kanbas/signin");
+  };
+
+
   return (
     <div className="w-50">
       <h1>Account</h1>
+      {JSON.stringify(account)}
       {account && (
         <div>
           <input value={account.password}
@@ -56,6 +62,9 @@ const { id } = useParams();
           </select>
           <button onClick={save}>
             Save
+        </button>
+        <button onClick={signout}>
+          Signout
         </button>
         <Link to="/kanbas/admin/users" className="btn btn-warning w-100">Users</Link>
         </div>
